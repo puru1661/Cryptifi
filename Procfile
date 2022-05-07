@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run cryptifi.py
+web: sh setup.sh && streamlit run cryptifi.py runserver 0.0.0.0:$PORT
