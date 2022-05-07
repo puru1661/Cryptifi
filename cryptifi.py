@@ -4,7 +4,7 @@ from pycoingecko import CoinGeckoAPI
 import pandas as pd
 from math import floor, ceil
 import sqlite3
-import cryptifi as st
+import streamlit as st
 from binance.client import Client
 import ffn
 import plotly.graph_objects as go
