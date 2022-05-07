@@ -10,7 +10,6 @@ Riskfolio-Lib
 scikit-learn
 scipy
 seaborn
-statsmodel
 TA-Lib
 yfinance
 
