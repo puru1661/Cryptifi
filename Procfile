@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run cryptifi.py
+worker: sh setup.sh && streamlit run cryptifi.py
