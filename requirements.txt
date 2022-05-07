@@ -1,2 +1,20 @@
-numba==0.55.1numexpr @ file:///opt/concourse/worker/volumes/live/87ac54fe-281a-440d-4d94-26ac99bdabdc/volume/numexpr_1640704258458/worknumpy @ file:///opt/concourse/worker/volumes/live/9909a8d0-9b8e-44eb-6059-6c668078c029/volume/numpy_and_numpy_base_1626271794641/workolefile @ file:///Users/ktietz/demo/mc3/conda-bld/olefile_1629805411829/workosqp==0.6.2.post5pandas==1.4.1pandas-datareader==0.10.0statsmodels==0.13.2TA-Lib==0.4.24seaborn==0.11.2scikit-learn @ file:///opt/concourse/worker/volumes/live/cffa5efe-beec-4a37-5774-350794e43990/volume/scikit-learn_1642617139916/workscipy @ file:///opt/concourse/worker/volumes/live/9284487f-601d-4bc3-5556-535c4949d341/volume/scipy_1641557769615/workQuantStats==0.0.50regex==2022.1.18requests @ file:///opt/conda/conda-bld/requests_1641824580448/workRiskfolio-Lib==3.0.0python-binance==1.0.15pycoingecko==2.2.0plotly==5.6.0llvmlite==0.38.0lxml==4.8.0MarkupSafe @ file:///opt/concourse/worker/volumes/live/1bcf0940-5bf8-4171-61e3-2133f5885e8b/volume/markupsafe_1621528148241/workmatplotlib @ file:///opt/concourse/worker/volumes/live/0da721da-13cb-462d-69c8-9ee9bb3461fb/volume/matplotlib-suite_1645455704170/workmatplotlib-inline @ file:///tmp/build/80754af9/matplotlib-inline_1628242447089/workffn==0.3.6cvxpy==1.1.18
-
+ffn==0.3.6
+matplotlib==3.5.1
+matplotlib-inline==0.1.2
+numba==0.55.1
+numpy==1.20.3
+pandas==1.4.1
+pandas-datareader==0.10.0
+plotly==5.6.0
+pycoingecko==2.2.0
+python-binance==1.0.15
+QuantStats==0.0.50
+Riskfolio-Lib==3.0.0
+scikit-learn==1.0.2
+scipy==1.7.3
+seaborn==0.11.2
+statsmodels==0.13.2
+TA-Lib==0.4.24
+vectorbt==0.23.2
+yfinance==0.1.70
+zipp==3.7.0
