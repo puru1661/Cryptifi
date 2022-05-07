@@ -1,1 +1,1 @@
-worker: sh setup.sh && streamlit run cryptifi.py
+echo PORT $PORT web: sh setup.sh && streamlit run --server.port $PORT cryptifi.py
