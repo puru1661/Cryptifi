@@ -4,7 +4,7 @@ from pycoingecko import CoinGeckoAPI
 import pandas as pd
 from math import floor, ceil
 import sqlite3
-import streamlit as st
+import cryptifi as st
 from binance.client import Client
 import ffn
 import plotly.graph_objects as go
@@ -318,26 +318,26 @@ if option == "Coins":
         #dets = ohlc['close'].ffn.drawdown_details()
         return ddown
 
-    def arb():
-        binance = ccxt.binance()
-        bitbns = ccxt.bitbns()
-        kraken = ccxt.kraken()
-        bitfinex= ccxt.bitfinex()
-        bitstamp = ccxt.bitstamp()
-        exchanges = [binance,bitbns,kraken,bitfinex,bitstamp]
-        prices = []
-        for ex in exchanges:
-            ticker = ex.fetch_ticker(symbol[:3].upper()+'/USDT')
+    # def arb():
+    #     binance = ccxt.binance()
+    #     bitbns = ccxt.bitbns()
+    #     kraken = ccxt.kraken()
+    #     bitfinex= ccxt.bitfinex()
+    #     bitstamp = ccxt.bitstamp()
+    #     exchanges = [binance,bitbns,kraken,bitfinex,bitstamp]
+    #     prices = []
+    #     for ex in exchanges:
+    #         ticker = ex.fetch_ticker(symbol[:3].upper()+'/USDT')
             
-            prices.append(ticker['last'])
-        v = np.array(prices)
-        x = (v[:, np.newaxis] - v[np.newaxis, :])
+    #         prices.append(ticker['last'])
+    #     v = np.array(prices)
+    #     x = (v[:, np.newaxis] - v[np.newaxis, :])
         
-        arb = pd.DataFrame(x,columns = exchanges)
-        arb['ex'] = exchanges
-        arb = arb.set_index('ex')
-        #print(arb)
-        return arb.head()
+    #     arb = pd.DataFrame(x,columns = exchanges)
+    #     arb['ex'] = exchanges
+    #     arb = arb.set_index('ex')
+    #     #print(arb)
+    #     return arb.head()
 
     symbol =  access_index(data, 'symbol').upper()+'USDT'
     ohlc = ohlcCryphist(symbol,client.KLINE_INTERVAL_1DAY,"1 Jan,2018")
