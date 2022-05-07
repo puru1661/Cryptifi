@@ -1,1 +1,1 @@
-web: sh setup.sh && streamlit run cryptifi.py runserver 0.0.0.0:$PORT
+web: sh setup.sh && streamlit run --server.enableCORS false --server.port $PORT cryptifi.py
