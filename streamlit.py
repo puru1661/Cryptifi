@@ -12,10 +12,8 @@ import plotly.express as px
 import numpy as np
 import seaborn as sns
 import matplotlib.pyplot as plt
-import squarify 
 import matplotlib
 #import ccxt
-import asyncio
 import talib as ta
 #import ccxt.async_support as ccxt
 
