@@ -1,6 +1,5 @@
 import math
 from datetime import datetime
-from turtle import width
 from pycoingecko import CoinGeckoAPI
 import pandas as pd
 from math import floor, ceil
