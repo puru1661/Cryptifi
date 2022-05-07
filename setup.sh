@@ -3,5 +3,5 @@ echo "
 [server]n
 headless = truen
 enableCORS=falsen
-port = $PORT
+port = $PORTn
 " 
